@@ -1,4 +1,23 @@
-﻿commit fcc06ae69a9fe63d05dd30f5e485d925f375ef2d
+﻿commit 287c8e70f6151b5aa91fe005e281bacaecb01449
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 17:37:35 2026 +0700
+
+    feat(checklist): generate 48-item GUI test checklist and export to excel
+
+ checklist/GUI_Checklist.md   |  79 +++++++++++++++++++++++++++++++++++++++++++
+ checklist/GUI_Checklist.xlsx | Bin 0 -> 12495 bytes
+ 2 files changed, 79 insertions(+)
+
+commit ecbfb6c3148302db08ffdc832d73124b3da76e9f
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 17:25:46 2026 +0700
+
+    chore: update git-commit-log.txt after skill refinement
+
+ git-commit-log.txt | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+
+commit fcc06ae69a9fe63d05dd30f5e485d925f375ef2d
 Author: Hidebray <daihiep10092005@gmail.com>
 Date:   Sat Nov 14 17:25:46 2026 +0700
 
