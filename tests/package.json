@@ -1,0 +1,18 @@
+{
+  "name": "hw03-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwright Automation Test Suite for EShop Web Admin GUI Checklist",
+  "main": "gui_checklist_execution.spec.js",
+  "scripts": {
+    "test": "node gui_checklist_execution.spec.js",
+    "test:headed": "node gui_checklist_execution.spec.js --headed"
+  },
+  "keywords": [
+    "playwright",
+    "gui-testing",
+    "eshop-admin",
+    "software-testing"
+  ],
+  "author": "Tran Dai Hiep (23120256)",
+  "license": "ISC"
+}
