@@ -1,4 +1,22 @@
-﻿commit 86a9413d442515bfb77c06b3eb3c70c4dc5d936f
+﻿commit 537567ef14597a490398c2ec064e84e81765d62f
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 17:19:59 2026 +0700
+
+    chore(git): remove compiled pyc from git tracking
+
+ .../scripts/__pycache__/export_to_excel.cpython-314.pyc | Bin 12324 -> 0 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ccf2fc406ab834c02028c20ec59079eb9a48ffa9
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 17:19:49 2026 +0700
+
+    chore: update git-commit-log.txt after python cache removal
+
+ git-commit-log.txt | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+
+commit 86a9413d442515bfb77c06b3eb3c70c4dc5d936f
 Author: Hidebray <daihiep10092005@gmail.com>
 Date:   Sat Nov 14 17:19:49 2026 +0700
 
