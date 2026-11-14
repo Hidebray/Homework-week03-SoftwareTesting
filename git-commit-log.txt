@@ -1,4 +1,27 @@
-﻿commit e2a531155d19c9660b28d58c4560460d4dc01665
+﻿commit aea54d245b8349bacc36a9fd110677a99bbc8f90
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 19:29:44 2026 +0700
+
+    feat(skill): implement usability-evaluator agent skill with 6-phase protocol, SUS calculator script, and reference guides
+
+ skills/usability-evaluator/SKILL.md                | 174 +++++++
+ .../resources/moderator_guide.md                   | 113 +++++
+ .../resources/sus_scale_guide.md                   | 102 +++++
+ .../resources/task_scenario_template.md            | 111 +++++
+ .../scripts/calculate_sus_and_export.py            | 500 +++++++++++++++++++++
+ usability/04_sus_scoring_matrix.xlsx               | Bin 0 -> 9161 bytes
+ 6 files changed, 1000 insertions(+)
+
+commit 1f71d2bb2652d1314fbd585a8943d40ad9289fcf
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 19:23:38 2026 +0700
+
+    chore: refresh git-commit-log.txt after embedding image links
+
+ git-commit-log.txt | 22 +++++++++++++++++++++-
+ 1 file changed, 21 insertions(+), 1 deletion(-)
+
+commit e2a531155d19c9660b28d58c4560460d4dc01665
 Author: Hidebray <daihiep10092005@gmail.com>
 Date:   Sat Nov 14 19:23:38 2026 +0700
 
