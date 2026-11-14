@@ -35,7 +35,7 @@
 | `CHK-04` | Dashboard | `IA-01` | Co giãn thẻ KPI khi thu nhỏ mobile | 🤖 **Playwright** | Đã tự động đổi viewport 480x800 và chụp ảnh vỡ chữ. |
 | `CHK-05` | Dashboard | `IA-02` | Bộ lọc thời gian chọn ngày thống kê | 🤖 **Playwright** | Kiểm tra DOM không tìm thấy bất kỳ ô chọn ngày nào trên Dashboard. |
 | `CHK-06` | Dashboard | `IA-03` | Phím Tab duyệt menu Sidebar (A11y) | 👤 **Manual** | **Tự thử:** Bấm phím `Tab` liên tục xem con trỏ có nhảy vào các mục Sidebar không? $\implies$ Bị liệt! |
-| `CHK-07` | Dashboard | `IA-03` | Highlight xanh mục menu đang chọn | 👤 **Manual** | Nhấp vào từng tab, nhìn xem chữ có đổi sang màu xanh sáng (`text-blue-400`) không. |
+| `CHK-07` | Dashboard | `IA-03` | Highlight xanh mục menu đang chọn | 🤖 **Playwright** | Kiểm tra class `text-blue-400` trên thẻ `li` active trong sidebar. |
 | `CHK-08` | Dashboard | `IA-03` | Nhấp thẻ KPI để chuyển sang bảng Đơn | 🤖 **Playwright** | Đã kiểm tra: Thẻ KPI chỉ là thẻ `div`, trỏ chuột không đổi thành bàn tay (`cursor-pointer`). |
 | `CHK-09` | Dashboard | `IA-04` | Doanh thu nhân đôi (`* 2`) | 🤖 **Playwright** | Đã kiểm tra số học: Đơn 150.000 ₫ nhưng Dashboard hiển thị thành 300.000 ₫. |
 | `CHK-10` | Dashboard | `IA-04` | Loạn định dạng tiền tệ giữa 3 tabs | 👤 **Manual** | Mở tab SP xem số `30000000 ₫`, tab Coupon xem `300,000 ₫`, tab Dashboard xem `0 ₫`. |
@@ -60,19 +60,19 @@
 | `CHK-29` | Mã Giảm Giá | `IA-02` | Cho phép chọn ngày hết hạn năm 2020 | 🤖 **Playwright** | Đã chọn ngày `2020-01-01`: Date picker không có `min="today"`, cho phép lưu. |
 | `CHK-30` | Mã Giảm Giá | `IA-02` | Giảm giá phần trăm cho phép nhập 500% | 🤖 **Playwright** | Đã nhập `500` vào ô %: Form chấp nhận vì thiếu `max="100"`. |
 | `CHK-31` | Mã Giảm Giá | `IA-02` | Nhãn "Giá trị" tĩnh không đổi % hay ₫ | 👤 **Manual** | Đổi dropdown giữa Phần trăm và Số tiền: Ô bên dưới vẫn chỉ ghi chữ "Giá trị". |
-| `CHK-32` | Mã Giảm Giá | `IA-03` | Nút "Tạo mã" màu cam nổi bật | 👤 **Manual** | Quan sát độ tương phản của nút màu cam `bg-orange-500` với nền trắng. |
-| `CHK-33` | Mã Giảm Giá | `IA-03` | Nút Xóa có màu đỏ cảnh báo | 👤 **Manual** | Kiểm tra nút Xóa có mang màu đỏ cảnh báo hành động nguy hiểm không. |
-| `CHK-34` | Mã Giảm Giá | `IA-04` | Tag màu đỏ "Hết hạn" cho coupon cũ | 👤 **Manual** | Nhìn coupon có ngày quá khứ: Cột hết hạn hiện chữ đỏ "Hết hạn". |
+| `CHK-32` | Mã Giảm Giá | `IA-03` | Nút "Tạo mã" màu cam nổi bật | 🤖 **Playwright** | Kiểm tra hiển thị nút submit "Tạo mã" với background cam và focus được. |
+| `CHK-33` | Mã Giảm Giá | `IA-03` | Nút Xóa có màu đỏ cảnh báo | 🤖 **Playwright** | Kiểm tra nút Xóa mang class `bg-red-500` cảnh báo nguy hiểm trong DOM. |
+| `CHK-34` | Mã Giảm Giá | `IA-04` | Tag màu đỏ "Hết hạn" cho coupon cũ | 🤖 **Playwright** | Kiểm tra coupon có ngày quá khứ hiển thị thẻ `<span class="text-red-500">Hết hạn</span>`. |
 | `CHK-35` | Mã Giảm Giá | `IA-04` | Xóa coupon không có hộp thoại confirm | 🤖 **Playwright** | Nhấp Xóa: Không hề hiện dialog confirm, gọi thẳng API xóa ngay. |
 | `CHK-36` | Mã Giảm Giá | `IA-04` | Tự xóa trắng form sau khi tạo mã | 🤖 **Playwright** | Sau khi submit thành công: Các ô input tự reset về rỗng. |
-| `CHK-37` | Đơn Hàng | `IA-01` | Tiêu đề bảng đơn hàng có nền xám rõ nét | 👤 **Manual** | Kiểm tra dòng header bảng đơn hàng có màu xám `bg-gray-200` phân biệt rõ với dữ liệu. |
-| `CHK-38` | Đơn Hàng | `IA-01` | Mã đơn hàng có dấu thăng `#` | 👤 **Manual** | Nhìn cột đầu tiên: Mã đơn viết dạng `#1`, `#2`. |
+| `CHK-37` | Đơn Hàng | `IA-01` | Tiêu đề bảng đơn hàng có nền xám rõ nét | 🤖 **Playwright** | Kiểm tra thẻ `th` có class `bg-gray-200` và chứa đủ 6 tiêu đề cột. |
+| `CHK-38` | Đơn Hàng | `IA-01` | Mã đơn hàng có dấu thăng `#` | 🤖 **Playwright** | Kiểm tra regex `#\d+` trên các ô Order ID trong bảng. |
 | `CHK-39` | Đơn Hàng | `IA-01` | Địa chỉ dài tự động xuống dòng | 👤 **Manual** | Xem địa chỉ dài có tự xuống hàng hay bị tràn ngang làm vỡ bảng. |
 | `CHK-40` | Đơn Hàng | `IA-02` | Thiếu ô tìm kiếm và lọc trạng thái đơn | 🤖 **Playwright** | Quét DOM trang Đơn hàng: Không hề có bất kỳ ô input Search hay filter nào. |
 | `CHK-41` | Đơn Hàng | `IA-02` | Thiếu thanh phân trang khi có nhiều đơn | 🤖 **Playwright** | Bảng không hề có nút Trang trước / Trang sau hoặc phân trang số. |
 | `CHK-42` | Đơn Hàng | `IA-03` | Nút thao tác quá nhỏ (`text-xs`), khó bấm | 👤 **Manual** | **Tự thử bấm:** Nút "Xác nhận", "Hủy", "Giao hàng" rất bé, rất dễ bấm trượt trên laptop. |
 | `CHK-43` | Đơn Hàng | `IA-03` | Nút "Xác nhận" và "Hủy" xếp sát nhau | 👤 **Manual** | Khoảng cách 2 nút rất gần, nhân viên vội vàng rất dễ ấn nhầm vào Hủy đơn khách. |
-| `CHK-44` | Đơn Hàng | `IA-04` | Màu sắc badge trạng thái trực quan | 👤 **Manual** | Quan sát các badge: pending (vàng), confirmed (tím), shipping (xanh), delivered (xanh lá). |
+| `CHK-44` | Đơn Hàng | `IA-04` | Màu sắc badge trạng thái trực quan | 🤖 **Playwright** | Kiểm tra mã nguồn render badge trạng thái với các class CSS phân biệt màu (`bg-yellow-100`, `bg-green-100`). |
 | `CHK-45` | Đơn Hàng | `IA-04` | Bảng trắng toang thiếu Empty State khi DB rỗng | 👤 **Manual** | **Tự quan sát:** Khi chưa có đơn, bên dưới header là một khoảng trắng toang, thiếu chữ "Chưa có đơn". |
 | `CHK-46` | Đơn Hàng | `IA-04` | Đơn shipping chỉ hiện nút "Hoàn thành" | 🤖 **Playwright** | Kiểm tra đơn đang giao: Đúng quy trình chỉ hiển thị nút chuyển sang delivered. |
 | `CHK-47` | Đơn Hàng | `IA-04` | Đơn đã hủy (`canceled`) vẫn cho bấm Đã giao | 🤖 **Playwright** | Tìm đơn canceled: Phát hiện nút màu xanh "Đánh dấu Đã giao" $\implies$ Sai quy trình! |
