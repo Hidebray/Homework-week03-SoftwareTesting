@@ -1,4 +1,24 @@
-﻿commit 98af0b1b3f26ff376ce1187f2d406dd49875ce0c
+﻿commit 97416c2df3249547c30564fc1b8c8fd106d74dae
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 17:07:08 2026 +0700
+
+    docs: streamline scope overview and update README with correct email and quickstart
+
+ README.md                              | 113 +++++-----
+ reports/00_scope_selection_overview.md | 117 +++++++++++
+ reports/Scope_Specification.md         | 362 ---------------------------------
+ 3 files changed, 171 insertions(+), 421 deletions(-)
+
+commit 5bb424971ae54d1547ec280c0cd791c2ad143623
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 16:55:26 2026 +0700
+
+    chore: update git-commit-log.txt after scope specification and README creation
+
+ git-commit-log.txt | 36 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 36 insertions(+)
+
+commit 98af0b1b3f26ff376ce1187f2d406dd49875ce0c
 Author: Hidebray <daihiep10092005@gmail.com>
 Date:   Sat Nov 14 16:55:26 2026 +0700
 
