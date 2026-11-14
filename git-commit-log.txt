@@ -1,4 +1,25 @@
-﻿commit 9cfca93e4800b7516a48c03ee5a27204631607ae
+﻿commit 2bdcde314879747f0f6dde959586e36d9d514743
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 18:58:15 2026 +0700
+
+    docs: finalize task 01 report with deep AI gap analysis and updated 48-item GUI checklist
+
+ checklist/GUI_Checklist.md         | 117 +++++++--------
+ checklist/GUI_Checklist.xlsx       | Bin 12970 -> 13016 bytes
+ reports/01_GUI_Checklist_Report.md | 296 +++++++++++++++++++++----------------
+ tests/manual_test_guide.md         |  14 +-
+ 4 files changed, 235 insertions(+), 192 deletions(-)
+
+commit baecbae3bed9d3afbcca4b8633f1fd5ec88d4e65
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 18:44:44 2026 +0700
+
+    chore: update git-commit-log.txt after playwright execution and defect reporting
+
+ git-commit-log.txt | 53 ++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 52 insertions(+), 1 deletion(-)
+
+commit 9cfca93e4800b7516a48c03ee5a27204631607ae
 Author: Hidebray <daihiep10092005@gmail.com>
 Date:   Sat Nov 14 18:44:43 2026 +0700
 
