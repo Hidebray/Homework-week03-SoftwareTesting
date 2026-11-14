@@ -1,0 +1,7 @@
+# Node / Temp files
+node_modules/
+scratch/
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
