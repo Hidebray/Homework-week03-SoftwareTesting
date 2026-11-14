@@ -1,4 +1,24 @@
-﻿commit 18e00db295c092bca913eff2c3d05e626fae3c86
+﻿commit e2a531155d19c9660b28d58c4560460d4dc01665
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 19:23:38 2026 +0700
+
+    feat(checklist): embed direct markdown image links into notes column for all failed items
+
+ checklist/GUI_Checklist.md         |  56 ++++++++++++++++++-------------------
+ checklist/GUI_Checklist.xlsx       | Bin 13016 -> 13439 bytes
+ reports/01_GUI_Checklist_Report.md |  56 ++++++++++++++++++-------------------
+ 3 files changed, 56 insertions(+), 56 deletions(-)
+
+commit 22345376a04e38a338d96db27fdb4733e56607a3
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 19:01:41 2026 +0700
+
+    chore: refresh git-commit-log.txt after README update
+
+ git-commit-log.txt | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+
+commit 18e00db295c092bca913eff2c3d05e626fae3c86
 Author: Hidebray <daihiep10092005@gmail.com>
 Date:   Sat Nov 14 19:01:41 2026 +0700
 
