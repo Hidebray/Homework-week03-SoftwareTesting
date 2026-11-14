@@ -1,0 +1,36 @@
+﻿commit 98af0b1b3f26ff376ce1187f2d406dd49875ce0c
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 16:55:26 2026 +0700
+
+    docs: establish scope specification and initialize README with 100pt self-assessment
+
+ README.md                      | 138 ++++++++++++++++
+ reports/Scope_Specification.md | 362 +++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 500 insertions(+)
+
+commit fe847e088fb7aaf19c18dfbad116ed7aeca817b7
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 16:29:08 2026 +0700
+
+    feat: initialize HW03 project structure and templates
+
+ .gitignore                                         |   7 +
+ AI/.gitkeep                                        |   0
+ .../[AI-01] - FIT@HCMUS - AI Agreement_En.docx     | Bin 0 -> 3812758 bytes
+ .../[AI-02] - FIT@HCMUS - AI Audit Report_En.docx  | Bin 0 -> 61733 bytes
+ ...AI-03] - FIT@HCMUS - AI Disclosure Form_En.docx | Bin 0 -> 57125 bytes
+ ...] - FIT@HCMUS - AI Reflective Statement_En.docx | Bin 0 -> 52177 bytes
+ ...-05] - FIT@HCMUS - AI Privacy Checklist_En.docx | Bin 0 -> 49693 bytes
+ ... FIT@HCMUS - AI Student Acknowledgement_En.docx | Bin 0 -> 49659 bytes
+ bugs/.gitkeep                                      |   0
+ checklist/.gitkeep                                 |   0
+ cross-platform/.gitkeep                            |   0
+ proof-image/checklist/.gitkeep                     |   0
+ proof-image/cross-platform/.gitkeep                |   0
+ proof-image/usability/.gitkeep                     |   0
+ reports/.gitkeep                                   |   0
+ requirement/2026.HW03.GUI Usability_En.pdf         | Bin 0 -> 231854 bytes
+ requirement/extracted_requirement.txt              | 199 +++++++++++++++++++++
+ skills/.gitkeep                                    |   0
+ usability/.gitkeep                                 |   0
+ 19 files changed, 206 insertions(+)
