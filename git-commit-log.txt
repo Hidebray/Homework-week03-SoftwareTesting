@@ -1,4 +1,26 @@
-﻿commit 97416c2df3249547c30564fc1b8c8fd106d74dae
+﻿commit 4875955ea93e50eb8d87d368353512b8ef5b95af
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 17:19:36 2026 +0700
+
+    feat(skills): implement gui-checklist-tester agent skill with excel export automation
+
+ skills/gui-checklist-tester/SKILL.md               |  95 +++++++
+ .../resources/checklist_template.md                |  26 ++
+ .../resources/ia_heuristic_guide.md                |  93 +++++++
+ .../__pycache__/export_to_excel.cpython-314.pyc    | Bin 0 -> 12324 bytes
+ .../scripts/export_to_excel.py                     | 292 +++++++++++++++++++++
+ 5 files changed, 506 insertions(+)
+
+commit c695b322ac43b5d3613fcef468208fdc681447f5
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 17:07:08 2026 +0700
+
+    chore: update git-commit-log.txt after scope overview revision
+
+ git-commit-log.txt | 22 +++++++++++++++++++++-
+ 1 file changed, 21 insertions(+), 1 deletion(-)
+
+commit 97416c2df3249547c30564fc1b8c8fd106d74dae
 Author: Hidebray <daihiep10092005@gmail.com>
 Date:   Sat Nov 14 17:07:08 2026 +0700
 
