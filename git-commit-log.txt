@@ -1,4 +1,22 @@
-﻿commit 537567ef14597a490398c2ec064e84e81765d62f
+﻿commit fcc06ae69a9fe63d05dd30f5e485d925f375ef2d
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 17:25:46 2026 +0700
+
+    fix(skills): refine gui-checklist-tester skill flow to focus purely on ingestion, checklist generation, execution and excel export
+
+ skills/gui-checklist-tester/SKILL.md | 15 ++++-----------
+ 1 file changed, 4 insertions(+), 11 deletions(-)
+
+commit e69b44f2fe7cacf4b3cc1f2d75106fcfc5c12881
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 17:20:00 2026 +0700
+
+    chore: refresh git-commit-log.txt
+
+ git-commit-log.txt | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+
+commit 537567ef14597a490398c2ec064e84e81765d62f
 Author: Hidebray <daihiep10092005@gmail.com>
 Date:   Sat Nov 14 17:19:59 2026 +0700
 
