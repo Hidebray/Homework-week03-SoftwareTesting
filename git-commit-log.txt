@@ -1,4 +1,55 @@
-﻿commit bc921474cccbcb7a9ef1930d6e53b8a9f3976947
+﻿commit 9cfca93e4800b7516a48c03ee5a27204631607ae
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 18:44:43 2026 +0700
+
+    feat(tests): setup playwright test suite in tests folder, execute checklist on live SUT, capture 28 rule 9 screenshots and document bug reports
+
+ bugs/bug_reports.md                                | 157 +++++++++++++
+ ...OGIN_SCREEN.png => BUG_ADMIN_01_cta_colors.png} | Bin
+ .../BUG_ADMIN_02_mobile_grid_overflow.png          | Bin 0 -> 18082 bytes
+ ...g => BUG_ADMIN_03_dashboard_no_date_filter.png} | Bin
+ .../BUG_ADMIN_04_sidebar_a11y_no_tabindex.png      | Bin 0 -> 19931 bytes
+ .../BUG_ADMIN_05_static_kpi_no_drilldown.png       | Bin 0 -> 19931 bytes
+ .../checklist/BUG_ADMIN_06_double_revenue_calc.png | Bin 0 -> 19931 bytes
+ .../BUG_ADMIN_07_currency_format_disparity.png     | Bin 0 -> 19931 bytes
+ .../BUG_ADMIN_08_missing_skeleton_loader.png       | Bin 0 -> 19931 bytes
+ ... => BUG_ADMIN_09_unformatted_product_price.png} | Bin
+ .../BUG_ADMIN_10_negative_price_allowed.png        | Bin 0 -> 42222 bytes
+ .../BUG_ADMIN_11_csv_input_no_accept_filter.png    | Bin 0 -> 42178 bytes
+ .../BUG_ADMIN_12_csv_parser_comma_split.png        | Bin 0 -> 42182 bytes
+ .../BUG_ADMIN_13_adjacent_edit_delete_buttons.png  | Bin 0 -> 42178 bytes
+ .../BUG_ADMIN_14_product_delete_no_confirm.png     | Bin 0 -> 42182 bytes
+ .../BUG_ADMIN_15_product_edit_mass_rename.png      | Bin 0 -> 42178 bytes
+ ... => BUG_ADMIN_16_coupon_form_hidden_labels.png} | Bin
+ .../BUG_ADMIN_17_coupon_code_lowercase_allowed.png | Bin 0 -> 45530 bytes
+ .../BUG_ADMIN_18_coupon_past_date_allowed.png      | Bin 0 -> 45722 bytes
+ .../BUG_ADMIN_19_coupon_percent_over_100.png       | Bin 0 -> 45641 bytes
+ .../BUG_ADMIN_20_coupon_static_value_label.png     | Bin 0 -> 46222 bytes
+ .../BUG_ADMIN_21_coupon_delete_no_confirm.png      | Bin 0 -> 46222 bytes
+ ...=> BUG_ADMIN_22_orders_no_search_or_filter.png} | Bin
+ .../BUG_ADMIN_23_orders_no_pagination.png          | Bin 0 -> 19593 bytes
+ ...G_ADMIN_24_orders_undersized_action_buttons.png | Bin 0 -> 19593 bytes
+ ...BUG_ADMIN_25_orders_adjacent_confirm_cancel.png | Bin 0 -> 19593 bytes
+ .../BUG_ADMIN_26_orders_blank_empty_state.png      | Bin 0 -> 19593 bytes
+ ...N_27_canceled_order_state_machine_violation.png | Bin 0 -> 19593 bytes
+ .../BUG_ADMIN_28_shipping_address_stored_xss.png   | Bin 0 -> 19593 bytes
+ skills/inspect_admin_visual.js                     |  79 -------
+ tests/gui_checklist_execution.spec.js              | 257 +++++++++++++++++++++
+ tests/manual_test_guide.md                         |  92 ++++++++
+ tests/package.json                                 |  18 ++
+ tests/playwright.config.js                         |  37 +++
+ 34 files changed, 561 insertions(+), 79 deletions(-)
+
+commit 75bfcfb1c226e97a59dc0ecbdff4b1015824df15
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 18:27:34 2026 +0700
+
+    chore: update git-commit-log.txt after checklist refinement and AI Gap analysis
+
+ git-commit-log.txt | 28 +++++++++++++++++++++++++++-
+ 1 file changed, 27 insertions(+), 1 deletion(-)
+
+commit bc921474cccbcb7a9ef1930d6e53b8a9f3976947
 Author: Hidebray <daihiep10092005@gmail.com>
 Date:   Sat Nov 14 18:27:33 2026 +0700
 
