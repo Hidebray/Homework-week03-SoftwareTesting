@@ -1,4 +1,23 @@
-﻿commit aea54d245b8349bacc36a9fd110677a99bbc8f90
+﻿commit 6ae95c42e626605b2b76a572b60e7a6a39954e3f
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sun Nov 15 23:02:25 2026 +0700
+
+    feat(usability): create detailed usability plan with 3 goal-oriented tasks, think-aloud script, and 180s stopping rule
+
+ usability/01_usability_plan.md | 259 +++++++++++++++++++++++++++++++++++++++++
+ usability/sample_products.csv  |   4 +
+ 2 files changed, 263 insertions(+)
+
+commit 66a93133a872f79f471d6bc224a1188bad37a3df
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sat Nov 14 19:29:44 2026 +0700
+
+    chore: refresh git-commit-log.txt after implementing usability-evaluator skill
+
+ git-commit-log.txt | 25 ++++++++++++++++++++++++-
+ 1 file changed, 24 insertions(+), 1 deletion(-)
+
+commit aea54d245b8349bacc36a9fd110677a99bbc8f90
 Author: Hidebray <daihiep10092005@gmail.com>
 Date:   Sat Nov 14 19:29:44 2026 +0700
 
