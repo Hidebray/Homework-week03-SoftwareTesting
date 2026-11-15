@@ -1,4 +1,23 @@
-﻿commit 6ae95c42e626605b2b76a572b60e7a6a39954e3f
+﻿commit ac90dff3d746ac4491d299a8cae532b238dbefcb
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sun Nov 15 23:06:27 2026 +0700
+
+    feat(usability): prepare sample products CSV data and document participant profiles with pilot test findings
+
+ usability/02_participants_and_pilot.md | 204 +++++++++++++++++++++++++++++++++
+ usability/data/sample_products.csv     |   6 +
+ 2 files changed, 210 insertions(+)
+
+commit 82ef39431b4c9435b30a6765990e4ed3994d7663
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sun Nov 15 23:02:26 2026 +0700
+
+    chore: refresh git-commit-log.txt after adding usability plan
+
+ git-commit-log.txt | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+
+commit 6ae95c42e626605b2b76a572b60e7a6a39954e3f
 Author: Hidebray <daihiep10092005@gmail.com>
 Date:   Sun Nov 15 23:02:25 2026 +0700
 
