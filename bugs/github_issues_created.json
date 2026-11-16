@@ -1,0 +1,158 @@
+[
+  {
+    "bug_id": "BUG_ADMIN_01",
+    "number": 4,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/4",
+    "title": "[BUG_ADMIN_01] [MAJOR] [Dashboard - IA-01] Visual consistency of primary Call-to-Action (CTA) button colors across screens (Login: Blue, Products: Green, Coupons: Orange)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_02",
+    "number": 5,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/5",
+    "title": "[BUG_ADMIN_02] [MAJOR] [Dashboard - IA-01] Responsive behavior and card stacking when viewport is resized to tablet/mobile resolution (width < 768px)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_03",
+    "number": 3,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/3",
+    "title": "[BUG_ADMIN_03] [MAJOR] [Dashboard - IA-02] Date range filter controls or temporal scoping inputs for revenue aggregation."
+  },
+  {
+    "bug_id": "BUG_ADMIN_04",
+    "number": 6,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/6",
+    "title": "[BUG_ADMIN_04] [MAJOR] [Dashboard - IA-03] Keyboard accessibility and `Tab` key traversal on Sidebar navigation menu items (`<li>`)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_05",
+    "number": 7,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/7",
+    "title": "[BUG_ADMIN_05] [MAJOR] [Dashboard - IA-03] Quick shortcut navigation links or clickable drill-downs from KPI cards to detailed listing views."
+  },
+  {
+    "bug_id": "BUG_ADMIN_06",
+    "number": 8,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/8",
+    "title": "[BUG_ADMIN_06] [MAJOR] [Dashboard - IA-04] Revenue calculation accuracy and synchronization with actual delivered orders in database."
+  },
+  {
+    "bug_id": "BUG_ADMIN_07",
+    "number": 9,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/9",
+    "title": "[BUG_ADMIN_07] [MAJOR] [Dashboard - IA-04] Cross-screen currency formatting consistency between Dashboard (`toLocaleString() ₫`), Products (raw unformatted), and Coupons (US comma)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_08",
+    "number": 10,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/10",
+    "title": "[BUG_ADMIN_08] [MAJOR] [Dashboard - IA-04] Loading feedback and skeleton display during initial asynchronous API fetch of orders."
+  },
+  {
+    "bug_id": "BUG_ADMIN_09",
+    "number": 11,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/11",
+    "title": "[BUG_ADMIN_09] [MAJOR] [Sản phẩm & CSV - IA-01] Formatted price display in product catalog table with localized thousand separators."
+  },
+  {
+    "bug_id": "BUG_ADMIN_10",
+    "number": 13,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/13",
+    "title": "[BUG_ADMIN_10] [MAJOR] [Sản phẩm & CSV - IA-02] Boundary constraint validation on product price field (`price >= 0`)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_11",
+    "number": 14,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/14",
+    "title": "[BUG_ADMIN_11] [MAJOR] [Sản phẩm & CSV - IA-02] File upload MIME type and file extension restriction on CSV input control."
+  },
+  {
+    "bug_id": "BUG_ADMIN_12",
+    "number": 15,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/15",
+    "title": "[BUG_ADMIN_12] [MAJOR] [Sản phẩm & CSV - IA-02] CSV parser handling of embedded commas within quoted string fields (e.g., `\"Shirt, Cotton, Blue\"`)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_13",
+    "number": 16,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/16",
+    "title": "[BUG_ADMIN_13] [MAJOR] [Sản phẩm & CSV - IA-03] Physical separation and safe spacing between \"Sửa\" (Edit) and \"Xóa\" (Delete) action buttons in table rows."
+  },
+  {
+    "bug_id": "BUG_ADMIN_14",
+    "number": 17,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/17",
+    "title": "[BUG_ADMIN_14] [MAJOR] [Sản phẩm & CSV - IA-04] Destructive action confirmation modal dialog prior to product catalog deletion (`deleteProduct`)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_15",
+    "number": 18,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/18",
+    "title": "[BUG_ADMIN_15] [MAJOR] [Sản phẩm & CSV - IA-04] Single product update UI state integrity across catalog table records (`setProducts`)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_16",
+    "number": 19,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/19",
+    "title": "[BUG_ADMIN_16] [MAJOR] [Mã Giảm Giá - IA-02] Persistent field labels visibility and differentiation when inputs have initial default numeric values."
+  },
+  {
+    "bug_id": "BUG_ADMIN_18",
+    "number": 20,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/20",
+    "title": "[BUG_ADMIN_18] [MAJOR] [Mã Giảm Giá - IA-02] Temporal validity constraint on coupon expiration date picker (`min = today`)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_19",
+    "number": 21,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/21",
+    "title": "[BUG_ADMIN_19] [MAJOR] [Mã Giảm Giá - IA-02] Upper boundary constraint enforcement for percentage discount value (`1 <= value <= 100`)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_21",
+    "number": 22,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/22",
+    "title": "[BUG_ADMIN_21] [MAJOR] [Mã Giảm Giá - IA-04] Destructive action confirmation modal dialog prior to coupon deletion."
+  },
+  {
+    "bug_id": "BUG_ADMIN_22",
+    "number": 23,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/23",
+    "title": "[BUG_ADMIN_22] [MAJOR] [Đơn Hàng - IA-02] Search or filter input controls for locating specific orders by customer name or order ID."
+  },
+  {
+    "bug_id": "BUG_ADMIN_23",
+    "number": 24,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/24",
+    "title": "[BUG_ADMIN_23] [MAJOR] [Đơn Hàng - IA-02] Pagination or virtualized scrolling controls for handling large order volumes (>50 orders)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_24",
+    "number": 25,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/25",
+    "title": "[BUG_ADMIN_24] [MAJOR] [Đơn Hàng - IA-03] Action button sizing, touch target dimensions, and ergonomic spacing (Fitts's Law)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_25",
+    "number": 26,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/26",
+    "title": "[BUG_ADMIN_25] [MAJOR] [Đơn Hàng - IA-03] Physical buffer separation between positive progression action (\"Xác nhận\") and destructive action (\"Hủy\")."
+  },
+  {
+    "bug_id": "BUG_ADMIN_26",
+    "number": 27,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/27",
+    "title": "[BUG_ADMIN_26] [MAJOR] [Đơn Hàng - IA-04] Empty state visual representation and explanatory messaging when no orders exist in the database (`orders = []`)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_27",
+    "number": 28,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/28",
+    "title": "[BUG_ADMIN_27] [MAJOR] [Đơn Hàng - IA-04] State machine terminal state integrity enforcement for `canceled` orders (disallowing reactivation)."
+  },
+  {
+    "bug_id": "BUG_ADMIN_28",
+    "number": 30,
+    "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/30",
+    "title": "[BUG_ADMIN_28] [MAJOR] [Đơn Hàng - IA-04] Security sanitization and XSS protection on rendered customer shipping address (`shipping_address`)."
+  }
+]

@@ -146,6 +146,6 @@ Sinh viên **Trần Đại Hiệp** (MSSV: 23120256) xin cam kết:
 | Số participants | 7 + 1 pilot |
 | Nền tảng cross-platform | Chrome, Firefox, WebKit (Playwright) + Pixel 7 emulation, chạy local |
 | Demo video | **Chưa có** (cần quay và dán link YouTube thật) |
-| GitHub Issues | **Chưa tạo** (cần tạo kèm ảnh và dán link) |
+| GitHub Issues | **26 Issues đã đăng kèm ảnh** tại [`Hidebray/Homework-week03-SoftwareTesting/issues`](https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues) ([Ảnh chụp trang Issues](proof-image/github_issues_list.png)) |
 
 > Lưu ý trung thực: Task 3 hiện dùng trình duyệt giả lập cục bộ, không phải BrowserStack/LambdaTest hay thiết bị thật.
