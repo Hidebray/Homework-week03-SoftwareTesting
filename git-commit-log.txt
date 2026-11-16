@@ -1,4 +1,28 @@
-﻿commit ac90dff3d746ac4491d299a8cae532b238dbefcb
+﻿commit bfdc2015a327301e5533275e679e6695a2c8dc0d
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Mon Nov 16 12:06:55 2026 +0700
+
+    feat(usability): complete task 2 usability evaluation with observation notes, computed SUS matrix, and final report
+
+ reports/02_Usability_Evaluation_Report.md          | 277 +++++++++++++++++++++
+ .../scripts/calculate_sus_and_export.py            |  95 +++++--
+ usability/02_participants_and_pilot.md             |  14 +-
+ usability/03_observation_notes.md                  | 242 ++++++++++++++++++
+ usability/04_sus_scoring_matrix.xlsx               | Bin 9161 -> 9297 bytes
+ ...n (HW03 - 23120256)_Submissions_2026-11-16.csv" |   8 +
+ usability/SUS_Responses.xlsx                       | Bin 0 -> 9297 bytes
+ 7 files changed, 604 insertions(+), 32 deletions(-)
+
+commit 90546db551836e6d474454f9104f897cd13556be
+Author: Hidebray <daihiep10092005@gmail.com>
+Date:   Sun Nov 15 23:06:28 2026 +0700
+
+    chore: refresh git-commit-log.txt after adding participant profiles and pilot report
+
+ git-commit-log.txt | 21 ++++++++++++++++++++-
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+
+commit ac90dff3d746ac4491d299a8cae532b238dbefcb
 Author: Hidebray <daihiep10092005@gmail.com>
 Date:   Sun Nov 15 23:06:27 2026 +0700
 
