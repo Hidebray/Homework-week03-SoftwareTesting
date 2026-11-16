@@ -47,58 +47,58 @@ except ImportError:
 DEFAULT_PARTICIPANTS = [
     {
         "participant_id": "P00 (Pilot)",
-        "demographics": "Office Admin (Age 28, Non-tech)",
+        "demographics": "Đinh Thị Thảo (28t, Hành chính)",
         "masked_contact": "091****882",
         "q_scores": [3, 4, 2, 4, 3, 4, 3, 4, 2, 4],  # Initial pilot run
         "is_pilot": True,
     },
     {
         "participant_id": "P01",
-        "demographics": "Retail Shop Owner (Age 34)",
-        "masked_contact": "090****123",
-        "q_scores": [3, 4, 3, 4, 3, 4, 3, 4, 2, 4],
+        "demographics": "Nguyễn Hữu Tình (21t, Student - Trung bình)",
+        "masked_contact": "0868****044",
+        "q_scores": [3, 2, 4, 4, 3, 4, 3, 2, 3, 3],
         "is_pilot": False,
     },
     {
         "participant_id": "P02",
-        "demographics": "Inventory Associate (Age 26)",
-        "masked_contact": "093****456",
-        "q_scores": [2, 4, 2, 5, 2, 5, 2, 4, 2, 5],
+        "demographics": "Nguyễn Cao Quốc Huy (21t, Student - Trung bình)",
+        "masked_contact": "0817****364",
+        "q_scores": [4, 2, 2, 2, 3, 2, 5, 3, 4, 3],
         "is_pilot": False,
     },
     {
         "participant_id": "P03",
-        "demographics": "Online Shop Seller (Age 29)",
-        "masked_contact": "098****789",
-        "q_scores": [3, 3, 3, 3, 4, 3, 4, 3, 3, 3],
+        "demographics": "Phan Thị Mỹ Duyên (21t, Student - Cơ bản)",
+        "masked_contact": "0981****733",
+        "q_scores": [2, 2, 3, 4, 3, 3, 4, 2, 3, 4],
         "is_pilot": False,
     },
     {
         "participant_id": "P04",
-        "demographics": "Accounting Clerk (Age 38)",
-        "masked_contact": "091****234",
-        "q_scores": [2, 5, 2, 4, 2, 4, 2, 5, 2, 4],
+        "demographics": "Trần Đình Sỹ (18t, Student - Cơ bản)",
+        "masked_contact": "0356****496",
+        "q_scores": [2, 3, 3, 2, 3, 2, 4, 3, 4, 2],
         "is_pilot": False,
     },
     {
         "participant_id": "P05",
-        "demographics": "Warehouse Staff (Age 31)",
-        "masked_contact": "097****890",
-        "q_scores": [3, 4, 3, 4, 3, 4, 3, 4, 2, 4],
+        "demographics": "Trần Thị Mỹ Linh (25t, Y Dược - Cơ bản)",
+        "masked_contact": "0942****067",
+        "q_scores": [2, 3, 2, 3, 2, 3, 4, 3, 3, 3],
         "is_pilot": False,
     },
     {
         "participant_id": "P06",
-        "demographics": "Marketing Freelancer (Age 25)",
-        "masked_contact": "094****567",
-        "q_scores": [4, 3, 4, 3, 3, 3, 4, 3, 3, 3],
+        "demographics": "Nguyễn Quốc Duy (21t, Student - Trung bình)",
+        "masked_contact": "0379****910",
+        "q_scores": [3, 2, 4, 2, 4, 3, 4, 2, 4, 2],
         "is_pilot": False,
     },
     {
         "participant_id": "P07",
-        "demographics": "Store Cashier (Age 22)",
-        "masked_contact": "096****345",
-        "q_scores": [2, 4, 2, 4, 2, 5, 3, 4, 2, 4],
+        "demographics": "Nguyễn Mạnh Hiền (21t, Student - Trung bình)",
+        "masked_contact": "0865****517",
+        "q_scores": [2, 3, 4, 2, 2, 3, 4, 2, 4, 2],
         "is_pilot": False,
     },
 ]
@@ -465,6 +465,48 @@ def create_sus_workbook(participants: List[Dict[str, Any]], output_path: str):
     print(f"Successfully exported SUS Scoring Matrix to: {output_path}")
 
 
+def load_from_tally_csv(csv_path: str) -> List[Dict[str, Any]]:
+    """Loads and formats participant responses directly from Tally export CSV."""
+    import csv
+    participants = [
+        {
+            "participant_id": "P00 (Pilot)",
+            "demographics": "Đinh Thị Thảo (28t, Hành chính)",
+            "masked_contact": "091****882",
+            "q_scores": [3, 4, 2, 4, 3, 4, 3, 4, 2, 4],
+            "is_pilot": True,
+        }
+    ]
+    with open(csv_path, "r", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        headers = next(reader)
+        for idx, row in enumerate(reader, start=1):
+            if not row or len(row) < 18:
+                continue
+            name = row[3].strip()
+            age = row[4].strip()
+            job = row[5].strip()
+            phone = row[6].strip()
+            tech = row[7].strip()
+            q_scores = [int(x.strip()) for x in row[8:18]]
+
+            clean_phone = phone.replace("+84", "0").replace(" ", "").replace("-", "")
+            if len(clean_phone) >= 10:
+                masked_phone = clean_phone[:4] + "****" + clean_phone[-3:]
+            else:
+                masked_phone = phone[:3] + "****" + phone[-3:]
+
+            demo_str = f"{name} ({age}t, {job} - {tech})"
+            participants.append({
+                "participant_id": f"P{idx:02d}",
+                "demographics": demo_str,
+                "masked_contact": masked_phone,
+                "q_scores": q_scores,
+                "is_pilot": False,
+            })
+    return participants
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Calculate System Usability Scale (SUS) scores and export Excel matrix."
@@ -473,7 +515,7 @@ def main():
         "--input",
         type=str,
         default="",
-        help="Path to JSON file containing participant responses (optional).",
+        help="Path to JSON or CSV file containing participant responses (optional).",
     )
     parser.add_argument(
         "--output",
@@ -487,8 +529,11 @@ def main():
     # Load data
     if args.input and os.path.isfile(args.input):
         print(f"Loading participant data from: {args.input}")
-        with open(args.input, "r", encoding="utf-8") as f:
-            participants = json.load(f)
+        if args.input.lower().endswith(".csv"):
+            participants = load_from_tally_csv(args.input)
+        else:
+            with open(args.input, "r", encoding="utf-8") as f:
+                participants = json.load(f)
     else:
         print("Using standard 7-participant cohort data (+ 1 Pilot session)...")
         participants = DEFAULT_PARTICIPANTS

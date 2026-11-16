@@ -40,13 +40,13 @@ pie title Phân Bổ Trình Độ Công Nghệ Của 7 Người Tham Gia
 
 | Mã ND | Họ & Tên Đại Diện | Tuổi | Giới Tính | Nghề Nghiệp / Vị Trí | Trình Độ Công Nghệ | Kinh Nghiệm TMĐT & Phần Mềm Quản Trị | Thiết Bị Quen Dùng | SĐT / Zalo (Ẩn 4 Số Giữa) | Thời Gian Thực Hiện Phiên |
 |:---:|:---|:---:|:---:|:---|:---:|:---|:---:|:---:|:---:|
-| **P1** | Nguyễn Văn H. | 34 | Nam | Chủ cửa hàng thời trang bán lẻ | Trung bình | Đang dùng KiotViet bán lẻ tại quầy, thường xuyên mua hàng Shopee/Lazada | Laptop Windows 11 | `090****123` | 15/11/2026 – 09:30 |
-| **P2** | Trần Thị M. | 26 | Nữ | Nhân viên kho & điều phối hàng | Cơ bản | Quản lý sổ sách kho hàng qua Excel, mua hàng online hàng tuần | PC Desktop Windows | `093****456` | 15/11/2026 – 10:45 |
-| **P3** | Lê Hoàng K. | 29 | Nam | Người bán hàng online tự do | Thành thạo | Quản trị gian hàng Shopee & TikTok Shop 3 năm, dùng nhiều tool marketing | Macbook & Laptop Win | `098****789` | 15/11/2026 – 14:00 |
-| **P4** | Phạm Thị T. | 38 | Nữ | Kế toán nội bộ doanh nghiệp | Cơ bản | Sử dụng phần mềm kế toán MISA, ít tiếp xúc web quản trị TMĐT | Laptop ThinkPad Win 10 | `091****234` | 15/11/2026 – 15:30 |
-| **P5** | Vũ Đình D. | 31 | Nam | Nhân viên đóng gói & kho vận | Cơ bản | Soạn đơn hàng theo phiếu in, mua sắm đồ gia dụng qua mạng | Smartphone & PC Win | `097****890` | 15/11/2026 – 17:00 |
-| **P6** | Hoàng Mai L. | 25 | Nữ | Chuyên viên Marketing tự do | Trung bình | Từng chạy quảng cáo Facebook Ads, tạo mã khuyến mãi trên web WordPress | Laptop Dell Win 11 | `094****567` | 15/11/2026 – 19:30 |
-| **P7** | Đỗ Quốc T. | 22 | Nam | Thu ngân siêu thị mini | Trung bình | Sử dụng máy POS tính tiền hàng ngày, am hiểu thao tác máy tính cơ bản | Laptop Asus Win 11 | `096****345` | 15/11/2026 – 20:45 |
+| **P1** | Nguyễn Hữu Tình | 21 | Nam | Sinh viên / Bán hàng part-time | Trung bình | Mua hàng online thường xuyên, từng phụ trách quản lý kho hàng shop | Laptop Windows 11 | `0868****044` | 16/11/2026 – 09:30 |
+| **P2** | Nguyễn Cao Quốc Huy | 21 | Nam | Sinh viên / Online Seller | Trung bình | Bán hàng Shopee & TikTok Shop 2 năm, dùng nhiều tool marketing | PC Desktop Windows | `0817****364` | 16/11/2026 – 10:15 |
+| **P3** | Phan Thị Mỹ Duyên | 21 | Nữ | Sinh viên / Thu ngân shop | Cơ bản | Thu ngân phần mềm bán hàng tại quầy, mua sắm online hàng tuần | Laptop Win 10 | `0981****733` | 16/11/2026 – 11:00 |
+| **P4** | Trần Đình Sỹ | 18 | Nam | Sinh viên năm nhất | Cơ bản | Mua sắm đồ điện tử qua mạng, thao tác văn phòng cơ bản | Laptop Asus Win 11 | `0356****496` | 16/11/2026 – 14:00 |
+| **P5** | Trần Thị Mỹ Linh | 25 | Nữ | Y Dược / Bán lẻ dược phẩm | Cơ bản | Sử dụng phần mềm quản lý nhà thuốc, mua hàng online gia dụng | Laptop Dell Win 11 | `0942****067` | 16/11/2026 – 15:00 |
+| **P6** | Nguyễn Quốc Duy | 21 | Nam | Sinh viên / Quản lý shop | Trung bình | Quản trị gian hàng trực tuyến, thành thạo công cụ quản trị web | PC Desktop Win 11 | `0379****910` | 16/11/2026 – 16:30 |
+| **P7** | Nguyễn Mạnh Hiền | 21 | Nam | Sinh viên / Kinh doanh tự do | Trung bình | Mua bán online tự do, am hiểu các công cụ số và web admin | Laptop ThinkPad Win 10 | `0865****517` | 16/11/2026 – 17:45 |
 
 ---
 
