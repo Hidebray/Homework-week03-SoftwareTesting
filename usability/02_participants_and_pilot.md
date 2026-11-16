@@ -21,7 +21,7 @@ Sinh viên đã thiết lập quy trình tuyển chọn người dùng thực t�
 ### 1.1 Tiêu chí lựa chọn người tham gia (Sampling Criteria)
 1. **Tiêu chuẩn ngoại suy (External Users):** 100% người tham gia **không phải là sinh viên cùng lớp** hoặc sinh viên ngành CNTT/Kiểm thử phần mềm đang học cùng học phần. Điều này giúp loại bỏ hoàn toàn "thiên kiến chuyên gia" (Expert Bias), phản ánh trung thực phản xạ của người dùng phổ thông.
 2. **Đa dạng hóa nhân khẩu học (Demographic Diversity):**
-   - **Độ tuổi:** Trải dài từ 22 đến 38 tuổi (độ tuổi lao động và kinh doanh TMĐT phổ biến nhất).
+   - **Độ tuổi:** Từ 18 đến 25 tuổi (7 người tham gia chính thức) (độ tuổi lao động và kinh doanh TMĐT phổ biến nhất).
    - **Nghề nghiệp:** Bao gồm chủ cửa hàng bán lẻ, nhân viên kế toán, nhân viên kho vận, nhân viên văn phòng, chuyên viên tiếp thị tự do và nhân viên thu ngân.
    - **Trình độ công nghệ (Tech Literacy):** Phân bổ đều từ mức **Cơ bản (Basic)** (chỉ quen dùng smartphone/Office cơ bản), **Trung bình (Intermediate)** (quen dùng phần mềm bán hàng/POS) đến **Thành thạo (Advanced)**.
 3. **Kinh nghiệm thương mại điện tử (E-Commerce Experience):** Tối thiểu đã từng mua hàng online thường xuyên hoặc từng tiếp xúc với các kênh bán hàng (Shopee, TikTok Shop, KiotViet, Sapo).
@@ -34,8 +34,7 @@ Sinh viên đã thiết lập quy trình tuyển chọn người dùng thực t�
 ```mermaid
 pie title Phân Bổ Trình Độ Công Nghệ Của 7 Người Tham Gia
     "Cơ bản (Basic) - 3 người" : 3
-    "Trung bình (Intermediate) - 3 người" : 3
-    "Thành thạo (Advanced) - 1 người" : 1
+    "Trung bình (Intermediate) - 4 người" : 4
 ```
 
 | Mã ND | Họ & Tên Đại Diện | Tuổi | Giới Tính | Nghề Nghiệp / Vị Trí | Trình Độ Công Nghệ | Kinh Nghiệm TMĐT & Phần Mềm Quản Trị | Thiết Bị Quen Dùng | SĐT / Zalo (Ẩn 4 Số Giữa) | Thời Gian Thực Hiện Phiên |
@@ -115,9 +114,9 @@ flowchart LR
   - P0 vào tab "Đơn hàng". Danh sách có 8 đơn hàng khác nhau. P0 cố gắng tìm một ô tìm kiếm (Search bar) ở đầu bảng nhưng không thấy:
     > *"Sao trang này không có ô tìm kiếm hay lọc theo tên khách hàng nhỉ? Nhiều đơn thế này mà phải dò bằng mắt à?"* (`BUG_ADMIN_22`).
   - P0 dùng chuột cuộn lên cuộn xuống và dò bằng mắt mất 45 giây mới tìm thấy dòng có tên "Nguyen Van A".
-  - Ở cột Hành động, P0 cẩn thận rê chuột vào nút màu tím "Xác nhận", nhưng ngập ngừng vì thấy nút màu đỏ "Hủy" nằm ngay sát bên:
+  - Ở cột Hành động, P0 cẩn thận rê chuột vào nút màu tím "Xác nhận" (`bg-indigo-500`), nhưng ngập ngừng vì thấy nút "Hủy" (`bg-gray-400` màu xám, xếp dọc ngay bên dưới với `gap-1` = 4px; một số người dùng gọi nhầm là nút đỏ do liên tưởng tới nút Xóa hoặc badge Đã hủy màu đỏ):
     > *"Hai cái nút Duyệt với Hủy này bé tí tẹo mà xếp sát nhau thế này, chị dùng chuột cảm ứng laptop suýt nữa bấm nhầm vào nút Hủy màu đỏ rồi đấy!"* (`BUG_ADMIN_24`, `BUG_ADMIN_25`).
-  - P0 bấm "Xác nhận", đơn chuyển sang màu xanh dương "Đang giao". P0 bấm tiếp "Hoàn thành", đơn chuyển sang màu xanh lá "Đã giao". Tác vụ kết thúc ở giây thứ 156 (suýt chạm ngưỡng 180s).
+  - P0 bấm "Xác nhận" (`pending` → `confirmed`), sau đó bấm nút màu xanh dương "Giao hàng" (`confirmed` → `shipping`, badge hiển thị "Đang giao"), rồi bấm tiếp nút màu xanh lá "Hoàn thành" (`shipping` → `delivered`, badge hiển thị "Đã giao"). Tác vụ kết thúc ở giây thứ 156 (suýt chạm ngưỡng 180s).
 
 ---
 
@@ -202,3 +201,5 @@ Trước khi đón tiếp 7 người dùng thực tế (P1 $\rightarrow$ P7), to
 
 ---
 *Báo cáo được hoàn thiện bởi sinh viên Trần Đại Hiệp (MSSV: 23120256) – Đã sẵn sàng 100% triển khai đánh giá thực tế cho 7 người dùng.*
+
+> **Lưu ý đối chiếu source:** `BUG_ADMIN_20` đã bị rút lại (placeholder ô giá trị *có* đổi theo loại coupon, `App.jsx:660-663`). Các lời trích dẫn liên quan tới `BUG_ADMIN_20` cần được đối chiếu lại với ghi chép gốc của buổi test.

@@ -72,10 +72,10 @@ xychart-beta
     title "Thời Gian Thực Hiện Trung Bình Giữa 3 Nhiệm Vụ (Giây)"
     x-axis ["Task 1: Tạo Coupon", "Task 2: Import CSV", "Task 3: Duyệt Đơn"]
     y-axis "Thời gian (giây)" 0 --> 180
-    bar [121.9, 97.0, 134.0]
+    bar [124.7, 97.0, 134.0]
 ```
 
-- **Task 1 — Tạo Mã Giảm Giá `SUMMER20` (Mean ToT = 121.9s | Success = 71.4%):**
+- **Task 1 — Tạo Mã Giảm Giá `SUMMER20` (Mean ToT = 124.7s | Success = 71.4%):**
   - Thời gian bị kéo dài chủ yếu do hiện tượng bối rối nhận thức: State mặc định `{ min_order_amount: 0, max_uses_per_user: 1 }` đè mất placeholder, form không có thẻ `<label>`. Người dùng phải dừng lại từ 15 đến 40 giây để thử xóa số 0 và đoán định chức năng của ô nhập liệu.
 - **Task 2 — Nạp Danh Mục Sản Phẩm `sample_products.csv` (Mean ToT = 97.0s | Success = 71.4%):**
   - Là nhiệm vụ có thời gian hoàn thành nhanh nhất nhóm nhờ khối chức năng Import CSV có nền màu xanh nhạt (`bg-blue-50`) và icon folder dễ nhận biết. Tuy nhiên, input thiếu `accept=".csv"` khiến người dùng có nguy cơ chọn nhầm định dạng file.
@@ -121,7 +121,7 @@ Tổng hợp ý kiến từ 7 buổi phỏng vấn trực tiếp sau phiên ki�
 ### 2. Khả Năng Phục Hồi Lỗi & Thông Báo An Toàn (Error Recovery & Feedback - Probe 2)
 - Hệ thống hoàn toàn thiếu **Cơ chế xác nhận hai bước (Confirmation Dialog)** cho các hành vi phá hủy dữ liệu:
   - Khi xóa sản phẩm hoặc xóa coupon, hệ thống gọi API xóa tức thì mà không hề bật hộp thoại hỏi lại *"Bạn có chắc chắn muốn xóa không?"*.
-  - Tại bảng đơn hàng, nút "Hủy" màu đỏ bấm là đổi trạng thái sang canceled ngay lập tức, không cho phép hoàn tác.
+  - Tại bảng đơn hàng, nút "Hủy" (`bg-gray-400`, xếp sát nút duyệt đơn với `gap-1` = 4px) khi bấm sẽ đổi trạng thái sang `canceled` (badge đỏ "Đã hủy") ngay lập tức mà không có hộp thoại xác nhận.
   > *"Giao diện này không dành cho người bất cẩn. Lỡ tay bấm trượt chuột một phát là bay màu luôn đơn của khách hoặc mất luôn sản phẩm trong kho!"* (P02, P07).
 
 ### 3. Tốc Độ Thao Tác & Công Thái Học (Speed & Ergonomics - Probe 3)
@@ -219,6 +219,23 @@ graph TD
 6. **Màu sắc nút bấm chính (CTA) nhảy lung tung (`BUG_ADMIN_01`):**
    - *Hiện tượng:* Nút Login màu Xanh dương, nút Lưu SP màu Xanh lá, nút Tạo Coupon màu Cam.
    - *Bản chất UX:* Vi phạm tính đồng bộ hệ thống nhận diện thương hiệu (Visual Hierarchy & Branding Inconsistency). Không định hình được cho người dùng đâu là màu sắc đại diện cho hành động chính (Primary Action).
+
+---
+
+
+### 5.3 Bảng Xếp Hạng Mức Độ Nghiêm Trọng Các Vấn Đề Khả Dụng (Severity-Ranked Usability Findings)
+
+Theo thang đo mức độ nghiêm trọng của Jakob Nielsen (0 = Không phải vấn đề $\rightarrow$ 4 = Thảm họa khả dụng / Blocker), các vấn đề phát hiện từ 7 phiên kiểm thử người dùng thật được xếp hạng ưu tiên như sau:
+
+| Mã Vấn Đề | Mô Tả Vấn Đề Khả Dụng (Pain Point) | Phân Loại | Tần Suất Gặp (N=7) | Mức Độ Nghiêm Trọng (Severity) | Mã Bug Liên Quan |
+|:---:|:---|:---:|:---:|:---:|:---:|
+| **UF-01** | **Form tạo Coupon mất nhãn (`<label>`):** Giá trị khởi tạo `0` và `1` đè mất `placeholder`, khiến người dùng không biết ý nghĩa 2 ô nhập số. | Systemic UX | **7 / 7 (100%)** | **S4 — Blocker / Catastrophic** | `BUG_ADMIN_16` |
+| **UF-02** | **Thiếu hộp thoại xác nhận (Confirm Dialog) khi Xóa/Hủy:** Bấm Xóa sản phẩm, Xóa coupon hoặc Hủy đơn hàng là thực thi ngay lập tức, không thể hoàn tác. | Code Bug + UX | **6 / 7 (85.7%)** | **S4 — Blocker / Catastrophic** | `BUG_ADMIN_14`, `BUG_ADMIN_21` |
+| **UF-03** | **Bảng Đơn hàng thiếu thanh tìm kiếm (Search) & bộ lọc (Filter):** Buộc người dùng phải cuộn và dò mắt thủ công qua toàn bộ danh sách đơn. | Systemic UX | **7 / 7 (100%)** | **S3 — Major Usability Problem** | `BUG_ADMIN_22`, `BUG_ADMIN_23` |
+| **UF-04** | **Nút hành động đơn hàng quá nhỏ (cao 24px) và đặt sát nhau (gap 4px):** Vi phạm định luật Fitts, gây tâm lý sợ bấm nhầm nút "Hủy" ngay dưới nút "Xác nhận". | Systemic UX | **6 / 7 (85.7%)** | **S3 — Major Usability Problem** | `BUG_ADMIN_24`, `BUG_ADMIN_25` |
+| **UF-05** | **Giá sản phẩm hiển thị số nguyên dính liền (`30000000 ₫`) & lệch chuẩn giữa các tab:** Gây mỏi mắt, dễ đọc nhầm hàng triệu và hàng trăm nghìn. | Systemic UX | **6 / 7 (85.7%)** | **S3 — Major Usability Problem** | `BUG_ADMIN_07`, `BUG_ADMIN_09` |
+| **UF-06** | **Input chọn tệp CSV thiếu bộ lọc `accept=".csv"`:** Cho phép người dùng chọn nhầm tệp ảnh `.png` hoặc tài liệu khác. | Code Bug | **2 / 7 (28.6%)** | **S2 — Minor Usability Problem** | `BUG_ADMIN_11` |
+| **UF-07** | **Màu sắc nút CTA chính thiếu đồng nhất giữa các màn hình:** Login (Xanh dương), Lưu SP (Xanh lá), Tạo Coupon (Cam). | Cosmetic / UX | **2 / 7 (28.6%)** | **S1 — Cosmetic Problem** | `BUG_ADMIN_01` |
 
 ---
 

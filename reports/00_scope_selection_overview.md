@@ -109,7 +109,7 @@ graph TD
 
 1. **Nền tảng 1 — Google Chrome (Desktop):** Trình duyệt chính trên hệ điều hành Windows 11 (Blink rendering engine). Đánh giá hiển thị chuẩn ở độ phân giải 1920x1080.
 2. **Nền tảng 2 — Mozilla Firefox (Desktop):** Trình duyệt độc lập trên Windows 11 (Gecko rendering engine). Đánh giá tương thích CSS Grid/Flexbox và hoạt động của HTML5 Date Picker.
-3. **Nền tảng 3 — Google Chrome trên điện thoại thật (Mobile Phone via LAN):** Thiết bị di động thật kết nối cùng mạng Wi-Fi/LAN với máy chủ phát triển qua địa chỉ IP cục bộ (ví dụ: `http://192.168.1.x:5174`). Đánh giá khả năng hiển thị co giãn (Responsive), thanh menu co gọn, thanh cuộn bảng dữ liệu ngang và độ nhạy của các nút bấm cảm ứng.
+3. **Nền tảng 3 — Android Chrome (Pixel 7 emulation bằng Playwright; chưa dùng điện thoại thật):** Mô phỏng thiết bị di động (viewport 393x851) trên máy kiểm thử (ví dụ: `http://192.168.1.x:5174`). Đánh giá khả năng hiển thị co giãn (Responsive), thanh menu co gọn, thanh cuộn bảng dữ liệu ngang và độ nhạy của các nút bấm cảm ứng.
 
 *Mọi hình ảnh bằng chứng cross-platform sẽ được chụp nguyên bản (Rule 9) kèm watermark email `23120256@student.hcmus.edu.vn` và hiển thị rõ thanh URL trình duyệt.*
 

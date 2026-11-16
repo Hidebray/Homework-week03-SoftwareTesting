@@ -5,11 +5,13 @@
 > **Bài tập:** HW03 – GUI & Usability Testing (Task 1 Deliverable)  
 > **Sinh viên thực hiện:** Trần Đại Hiệp (MSSV: 23120256) – Email: `23120256@student.hcmus.edu.vn`  
 > **Đối tượng kiểm thử (SUT):** [EShop Web Admin](https://github.com/ttbhanh/eshop-sut)  
-> **Quy chuẩn bằng chứng (Rule 9):** Toàn bộ hình ảnh đính kèm là **ảnh chụp màn hình RAW nguyên bản 100%**, được xuất trực tiếp từ phiên kiểm thử Playwright, không qua bất kỳ chỉnh sửa hay cắt cúp làm mất thanh địa chỉ `localhost:5174`.  
+> **Quy chuẩn bằng chứng (Rule 9):** Toàn bộ hình ảnh đính kèm là **ảnh chụp màn hình RAW nguyên bản 100%**, được xuất trực tiếp từ phiên kiểm thử Playwright (`tests/gui_checklist_execution.spec.js`), không chỉnh sửa ảnh; phần tử lỗi được tô viền đỏ bằng CSS trong trang thật. Ảnh là viewport screenshot nên **không có thanh địa chỉ**.  
 
 ---
 
-## 1. Bảng Tổng Hợp 28 Lỗi Phát Hiện (Bug Summary Matrix)
+## 1. Bảng Tổng Hợp 26 Lỗi Phát Hiện (Bug Summary Matrix)
+
+> **Đính chính (sau khi chạy lại bằng test có assertion):** `BUG_ADMIN_17` (không tự viết hoa mã coupon) và `BUG_ADMIN_20` (nhãn giá trị không đổi theo loại coupon) đã được **rút lại** vì không đúng với source: `App.jsx:644` gọi `toUpperCase()` và `App.jsx:660-663` đổi placeholder theo loại coupon. `CHK-28` và `CHK-31` được chuyển sang **Pass**. Còn **26 bug**, **22 Pass / 26 Fail**.
 
 | Bug ID | Tên Khiếm Khuyết (Defect Title) | Tab / Màn Hình | Khía Cạnh | Mức Độ (Severity) | Ảnh Bằng Chứng (Rule 9 Raw) |
 |:---:|:---|:---:|:---:|:---:|:---|
@@ -29,10 +31,8 @@
 | `BUG_ADMIN_14` | Nút Xóa sản phẩm xóa vĩnh viễn dữ liệu ngay lập tức mà không có bất kỳ hộp thoại Confirm | Sản phẩm | `IA-04` | **CRITICAL** | [`BUG_ADMIN_14_product_delete_no_confirm.png`](../proof-image/checklist/BUG_ADMIN_14_product_delete_no_confirm.png) |
 | `BUG_ADMIN_15` | Sửa thông tin 1 sản phẩm làm toàn bộ sản phẩm trên bảng UI bị đồng loạt đổi tên (`fakeMass`) | Sản phẩm | `IA-04` | **CRITICAL** | [`BUG_ADMIN_15_product_edit_mass_rename.png`](../proof-image/checklist/BUG_ADMIN_15_product_edit_mass_rename.png) |
 | `BUG_ADMIN_16` | State mặc định `{min: 0, max: 1}` đè mất placeholder, form trơ trọi 2 ô số không có nhãn `<label>` | Mã Giảm Giá | `IA-02` | **MAJOR** | [`BUG_ADMIN_16_coupon_form_hidden_labels.png`](../proof-image/checklist/BUG_ADMIN_16_coupon_form_hidden_labels.png) |
-| `BUG_ADMIN_17` | Không ép chữ in hoa cho mã coupon, cho phép lưu mã dạng chữ thường lộn xộn | Mã Giảm Giá | `IA-02` | **MINOR** | [`BUG_ADMIN_17_coupon_code_lowercase_allowed.png`](../proof-image/checklist/BUG_ADMIN_17_coupon_code_lowercase_allowed.png) |
 | `BUG_ADMIN_18` | Bộ chọn ngày hết hạn thiếu `min="today"`, cho phép tạo mã có ngày hết hạn trong quá khứ | Mã Giảm Giá | `IA-02` | **MAJOR** | [`BUG_ADMIN_18_coupon_past_date_allowed.png`](../proof-image/checklist/BUG_ADMIN_18_coupon_past_date_allowed.png) |
 | `BUG_ADMIN_19` | Không khống chế giá trị tối đa `max="100"` khi chọn loại phần trăm, cho phép nhập 500% | Mã Giảm Giá | `IA-02` | **MAJOR** | [`BUG_ADMIN_19_coupon_percent_over_100.png`](../proof-image/checklist/BUG_ADMIN_19_coupon_percent_over_100.png) |
-| `BUG_ADMIN_20` | Nhãn ô giá trị giữ nguyên chữ "Giá trị" tĩnh, không đổi hậu tố `%` hay `₫` theo loại coupon | Mã Giảm Giá | `IA-02` | **MINOR** | [`BUG_ADMIN_20_coupon_static_value_label.png`](../proof-image/checklist/BUG_ADMIN_20_coupon_static_value_label.png) |
 | `BUG_ADMIN_21` | Nút Xóa mã giảm giá gọi API xóa ngay lập tức mà không có bất kỳ hộp thoại xác nhận | Mã Giảm Giá | `IA-04` | **CRITICAL** | [`BUG_ADMIN_21_coupon_delete_no_confirm.png`](../proof-image/checklist/BUG_ADMIN_21_coupon_delete_no_confirm.png) |
 | `BUG_ADMIN_22` | Bảng Đơn hàng thiếu ô tìm kiếm và bộ lọc trạng thái, gây quá tải khi tìm đơn | Đơn Hàng | `IA-02` | **MINOR** | [`BUG_ADMIN_22_orders_no_search_or_filter.png`](../proof-image/checklist/BUG_ADMIN_22_orders_no_search_or_filter.png) |
 | `BUG_ADMIN_23` | Bảng Đơn hàng hiển thị tất cả bản ghi trên một trang, thiếu phân trang (Pagination) | Đơn Hàng | `IA-02` | **MINOR** | [`BUG_ADMIN_23_orders_no_pagination.png`](../proof-image/checklist/BUG_ADMIN_23_orders_no_pagination.png) |

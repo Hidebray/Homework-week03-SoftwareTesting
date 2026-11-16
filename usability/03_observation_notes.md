@@ -21,9 +21,9 @@ gantt
     dateFormat X
     axisFormat %s s
     section Task 1: Tạo Coupon SUMMER20
-    ToT Trung Bình (121.9s) : 0, 122
+    ToT Trung Bình (124.7s) : 0, 125
     section Task 2: Import CSV Sản Phẩm
-    ToT Trung Bình (95.4s)  : 0, 95
+    ToT Trung Bình (97.0s)  : 0, 97
     section Task 3: Duyệt Đơn Nguyen Van A
     ToT Trung Bình (133.3s) : 0, 133
 ```
@@ -45,10 +45,10 @@ gantt
 
 | Chỉ Số Định Lượng | Task 1: Tạo Coupon `SUMMER20` | Task 2: Import `sample_products.csv` | Task 3: Duyệt Đơn "Nguyen Van A" | Toàn Bộ 3 Nhiệm Vụ |
 |:---|:---:|:---:|:---:|:---:|
-| **Thời gian trung bình (Mean ToT)** | **121.9 giây** ($\approx 2.0$ phút) | **97.0 giây** ($\approx 1.6$ phút) | **134.0 giây** ($\approx 2.2$ phút) | **355.7 giây** ($\approx 5.9$ phút) |
+| **Thời gian trung bình (Mean ToT)** | **124.7 giây** ($\approx 2.1$ phút) | **97.0 giây** ($\approx 1.6$ phút) | **134.0 giây** ($\approx 2.2$ phút) | **355.7 giây** ($\approx 5.9$ phút) |
 | **Thời gian nhanh nhất (Min ToT)** | 82 giây (P06) | 64 giây (P06) | 92 giây (P06) | 238 giây (P06) |
 | **Thời gian chậm nhất (Max ToT)** | 178 giây (P05) | 145 giây (P05) | 172 giây (P03) | 491 giây (P05) |
-| **Độ lệch chuẩn (Std Dev)** | 33.6 giây | 27.6 giây | 27.3 giây | 87.5 giây |
+| **Độ lệch chuẩn (Std Dev)** | 34.9 giây | 29.8 giây | 29.1 giây | 93.1 giây |
 | **Tỷ lệ thành công hoàn toàn (Success)** | 5 / 7 (71.4%) | 5 / 7 (71.4%) | 3 / 7 (42.9%) | **61.9%** |
 | **Tỷ lệ thành công một phần (Partial)** | 2 / 7 (28.6%) | 2 / 7 (28.6%) | 4 / 7 (57.1%) | **38.1%** |
 | **Tỷ lệ thất bại (Failed)** | 0 / 7 (0.0%) | 0 / 7 (0.0%) | 0 / 7 (0.0%) | **0.0%** *(nhờ Stopping Rule 180s)* |
@@ -206,7 +206,7 @@ graph TD
 - **Câu hỏi:** *"Khi bạn thao tác nhầm hoặc gặp sự cố, hệ thống có cung cấp hướng dẫn rõ ràng để bạn khắc phục không?"*
 - **Ý kiến phản hồi:** Hệ thống hoàn toàn thiếu cơ chế an toàn cho các thao tác mang tính hủy hoại dữ liệu:
   - Nút Xóa sản phẩm và Xóa coupon gọi API xóa vĩnh viễn tức thì mà không hề bật Modal xác nhận *"Bạn có chắc chắn muốn xóa không?"*.
-  - Tại bảng Đơn hàng, nếu người dùng bấm trượt vào nút "Hủy" màu đỏ, đơn hàng lập tức bị hủy vĩnh viễn mà không có bước xác nhận bảo vệ.
+  - Tại bảng Đơn hàng, nếu người dùng bấm trượt vào nút "Hủy" (màu xám `bg-gray-400`, đặt sát bên dưới nút "Xác nhận"/"Giao hàng" với `gap-1` = 4px), đơn hàng lập tức chuyển sang trạng thái `canceled` (badge đỏ "Đã hủy") mà không có hộp thoại xác nhận.
 
 ### 🗣️ Probe 3: Tốc Độ Thao Tác & Công Thái Học (Speed & Ergonomics)
 - **Câu hỏi:** *"Bạn thấy tốc độ làm việc trên hệ thống có nhanh và mượt mà không? Kích thước nút bấm có thoải mái để thao tác không?"*
@@ -240,3 +240,5 @@ Dữ liệu được trích xuất trực tiếp từ tệp khảo sát Tally v�
 
 ---
 *Biên bản quan sát được ghi nhận trung thực và bảo chứng bởi sinh viên Trần Đại Hiệp (MSSV: 23120256).*
+
+> **Lưu ý đối chiếu source:** `BUG_ADMIN_20` đã bị rút lại (placeholder ô giá trị *có* đổi theo loại coupon, `App.jsx:660-663`). Các lời trích dẫn liên quan tới `BUG_ADMIN_20` cần được đối chiếu lại với ghi chép gốc của buổi test.

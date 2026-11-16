@@ -1,0 +1,250 @@
+{
+  "runAt": "2026-11-16T05:33:45.489Z",
+  "results": [
+    {
+      "id": "CHK-11",
+      "bug": "BUG_ADMIN_08",
+      "status": "Fail",
+      "note": "Orders API delayed 2.5s: dashboard shows 0 ₫ / 0 with no loader/skeleton",
+      "shot": "BUG_ADMIN_08_missing_skeleton_loader.png"
+    },
+    {
+      "id": "CHK-12",
+      "bug": null,
+      "status": "Pass",
+      "note": "orders in DB at start: 0; KPI shows formatted zero",
+      "shot": null
+    },
+    {
+      "id": "CHK-45",
+      "bug": "BUG_ADMIN_26",
+      "status": "Fail",
+      "note": "orders=0, tbody rows=0, empty-state message=false",
+      "shot": "BUG_ADMIN_26_orders_blank_empty_state.png"
+    },
+    {
+      "id": "CHK-07",
+      "bug": null,
+      "status": "Pass",
+      "note": "active sidebar item highlighted",
+      "shot": null
+    },
+    {
+      "id": "CHK-09",
+      "bug": "BUG_ADMIN_06",
+      "status": "Fail",
+      "note": "API delivered sum=150000, UI shows=300000",
+      "shot": "BUG_ADMIN_06_double_revenue_calc.png"
+    },
+    {
+      "id": "CHK-05",
+      "bug": "BUG_ADMIN_03",
+      "status": "Fail",
+      "note": "date/select/search controls on dashboard: 0",
+      "shot": "BUG_ADMIN_03_dashboard_no_date_filter.png"
+    },
+    {
+      "id": "CHK-06",
+      "bug": "BUG_ADMIN_04",
+      "status": "Fail",
+      "note": "sidebar li tabIndex=[-1,-1,-1,-1,-1,-1,-1], focus after 2xTab=BODY",
+      "shot": "BUG_ADMIN_04_sidebar_a11y_no_tabindex.png"
+    },
+    {
+      "id": "CHK-08",
+      "bug": "BUG_ADMIN_05",
+      "status": "Fail",
+      "note": "clicking KPI card keeps the Dashboard view",
+      "shot": "BUG_ADMIN_05_static_kpi_no_drilldown.png"
+    },
+    {
+      "id": "CHK-15",
+      "bug": "BUG_ADMIN_09",
+      "status": "Fail",
+      "note": "unformatted prices: 30000000 ₫ | 28000000 ₫ | 45000000 ₫",
+      "shot": "BUG_ADMIN_09_unformatted_product_price.png"
+    },
+    {
+      "id": "CHK-16",
+      "bug": null,
+      "status": "Pass",
+      "note": "product name has required attribute",
+      "shot": null
+    },
+    {
+      "id": "CHK-17",
+      "bug": "BUG_ADMIN_10",
+      "status": "Fail",
+      "note": "price input min attr=null; value -50000 accepted by field",
+      "shot": "BUG_ADMIN_10_negative_price_allowed.png"
+    },
+    {
+      "id": "CHK-18",
+      "bug": "BUG_ADMIN_11",
+      "status": "Fail",
+      "note": "file input accept attr=null",
+      "shot": "BUG_ADMIN_11_csv_input_no_accept_filter.png"
+    },
+    {
+      "id": "CHK-19",
+      "bug": "BUG_ADMIN_12",
+      "status": "Fail",
+      "note": "quoted field \"Áo thun, cotton\" kept as one cell: false; preview cells sample: \"Áo thun | cotton\"",
+      "shot": "BUG_ADMIN_12_csv_parser_comma_split.png"
+    },
+    {
+      "id": "CHK-20",
+      "bug": null,
+      "status": "Pass",
+      "note": "category options=3, API=3",
+      "shot": null
+    },
+    {
+      "id": "CHK-21",
+      "bug": null,
+      "status": "Pass",
+      "note": "template download link present",
+      "shot": null
+    },
+    {
+      "id": "CHK-22",
+      "bug": "BUG_ADMIN_13",
+      "status": "Fail",
+      "note": "gap between Sửa and Xóa = 8.0px",
+      "shot": "BUG_ADMIN_13_adjacent_edit_delete_buttons.png"
+    },
+    {
+      "id": "CHK-24",
+      "bug": "BUG_ADMIN_15",
+      "status": "Fail",
+      "note": "edited 1 product, 6 rows now named HW03-RENAMED (of 7)",
+      "shot": "BUG_ADMIN_15_product_edit_mass_rename.png"
+    },
+    {
+      "id": "CHK-23",
+      "bug": "BUG_ADMIN_14",
+      "status": "Fail",
+      "note": "confirm dialog shown=false; product deleted from DB=true",
+      "shot": "BUG_ADMIN_14_product_delete_no_confirm.png"
+    },
+    {
+      "id": "CHK-27",
+      "bug": "BUG_ADMIN_16",
+      "status": "Fail",
+      "note": "<label> count=0; numeric defaults=[\"\",\"0\",\"1\"] hide placeholders",
+      "shot": "BUG_ADMIN_16_coupon_form_hidden_labels.png"
+    },
+    {
+      "id": "CHK-28",
+      "bug": "BUG_ADMIN_17 (RETRACTED)",
+      "status": "Pass",
+      "note": "typed \"sale_lower\" -> field value \"SALE_LOWER\" (App.jsx:644 uses toUpperCase)",
+      "shot": null
+    },
+    {
+      "id": "CHK-31",
+      "bug": "BUG_ADMIN_20 (RETRACTED)",
+      "status": "Pass",
+      "note": "placeholder percent=\"Giá trị % (VD: 10)\" vs fixed=\"Số tiền (VD: 50000)\" (App.jsx:660-663)",
+      "shot": null
+    },
+    {
+      "id": "CHK-29",
+      "bug": "BUG_ADMIN_18",
+      "status": "Fail",
+      "note": "date min attr=null; coupon with expiry 2020-01-01 created=true",
+      "shot": "BUG_ADMIN_18_coupon_past_date_allowed.png"
+    },
+    {
+      "id": "CHK-36",
+      "bug": null,
+      "status": "Pass",
+      "note": "form reset after create: [\"\",\"0\",\"1\"]",
+      "shot": null
+    },
+    {
+      "id": "CHK-30",
+      "bug": "BUG_ADMIN_19",
+      "status": "Fail",
+      "note": "max attr=null; percent coupon saved with value=500",
+      "shot": "BUG_ADMIN_19_coupon_percent_over_100.png"
+    },
+    {
+      "id": "CHK-34",
+      "bug": null,
+      "status": "Pass",
+      "note": "EXPIRED coupon shows Hết hạn",
+      "shot": null
+    },
+    {
+      "id": "CHK-35",
+      "bug": "BUG_ADMIN_21",
+      "status": "Fail",
+      "note": "confirm shown=false; coupon deleted=true",
+      "shot": "BUG_ADMIN_21_coupon_delete_no_confirm.png"
+    },
+    {
+      "id": "CHK-03",
+      "bug": "BUG_ADMIN_01",
+      "status": "Fail",
+      "note": "CTA colours {\"login\":\"rgb(37, 99, 235)\",\"products\":\"rgb(22, 163, 74)\",\"coupons\":\"rgb(249, 115, 22)\"}",
+      "shot": "BUG_ADMIN_01_cta_colors.png"
+    },
+    {
+      "id": "CHK-40",
+      "bug": "BUG_ADMIN_22",
+      "status": "Fail",
+      "note": "search/filter controls on Orders tab=0",
+      "shot": "BUG_ADMIN_22_orders_no_search_or_filter.png"
+    },
+    {
+      "id": "CHK-41",
+      "bug": "BUG_ADMIN_23",
+      "status": "Fail",
+      "note": "orders in DB=51; rows rendered on one page=51; pager controls=0",
+      "shot": "BUG_ADMIN_23_orders_no_pagination.png"
+    },
+    {
+      "id": "CHK-42",
+      "bug": "BUG_ADMIN_24",
+      "status": "Fail",
+      "note": "Xác nhận button height=24.0px (min 36)",
+      "shot": "BUG_ADMIN_24_orders_undersized_action_buttons.png"
+    },
+    {
+      "id": "CHK-43",
+      "bug": "BUG_ADMIN_25",
+      "status": "Fail",
+      "note": "gap Xác nhận↔Hủy=4.0px (stacked vertically, flex-col gap-1)",
+      "shot": "BUG_ADMIN_25_orders_adjacent_confirm_cancel.png"
+    },
+    {
+      "id": "CHK-46",
+      "bug": null,
+      "status": "Pass",
+      "note": "shipping order shows Hoàn thành",
+      "shot": null
+    },
+    {
+      "id": "CHK-47",
+      "bug": "BUG_ADMIN_27",
+      "status": "Fail",
+      "note": "canceled order row has \"Đánh dấu Đã giao\" button=true",
+      "shot": "BUG_ADMIN_27_canceled_order_state_machine_violation.png"
+    },
+    {
+      "id": "CHK-48",
+      "bug": "BUG_ADMIN_28",
+      "status": "Fail",
+      "note": "injected <img onerror> executed: document.title=\"XSS-HW03\"; injected red HTML rendered",
+      "shot": "BUG_ADMIN_28_shipping_address_stored_xss.png"
+    },
+    {
+      "id": "CHK-04",
+      "bug": "BUG_ADMIN_02",
+      "status": "Fail",
+      "note": "window innerWidth=501px: KPI grid columns=2, sidebar width=256px",
+      "shot": "BUG_ADMIN_02_mobile_grid_overflow.png"
+    }
+  ]
+}
