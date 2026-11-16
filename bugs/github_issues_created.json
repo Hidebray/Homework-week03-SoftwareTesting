@@ -1,158 +1,210 @@
 [
   {
     "bug_id": "BUG_ADMIN_01",
+    "check_id": "CHK-03",
+    "severity": "MINOR",
     "number": 4,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/4",
-    "title": "[BUG_ADMIN_01] [MAJOR] [Dashboard - IA-01] Visual consistency of primary Call-to-Action (CTA) button colors across screens (Login: Blue, Products: Green, Coupons: Orange)."
+    "title": "[BUG_ADMIN_01] [MINOR] [Dashboard - IA-01] Phân mảnh màu sắc nút bấm chính (CTA): Login Xanh dương, Lưu SP Xanh lá, Tạo Coupon Cam"
   },
   {
     "bug_id": "BUG_ADMIN_02",
+    "check_id": "CHK-04",
+    "severity": "MINOR",
     "number": 5,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/5",
-    "title": "[BUG_ADMIN_02] [MAJOR] [Dashboard - IA-01] Responsive behavior and card stacking when viewport is resized to tablet/mobile resolution (width < 768px)."
+    "title": "[BUG_ADMIN_02] [MINOR] [Dashboard - IA-01] Lưới thẻ KPI hardcode `grid-cols-2`, không co giãn thành 1 cột trên mobile làm tràn chữ"
   },
   {
     "bug_id": "BUG_ADMIN_03",
+    "check_id": "CHK-05",
+    "severity": "MINOR",
     "number": 3,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/3",
-    "title": "[BUG_ADMIN_03] [MAJOR] [Dashboard - IA-02] Date range filter controls or temporal scoping inputs for revenue aggregation."
+    "title": "[BUG_ADMIN_03] [MINOR] [Dashboard - IA-02] Thiếu hoàn toàn bộ lọc thời gian (Date filter) để thống kê doanh thu"
   },
   {
     "bug_id": "BUG_ADMIN_04",
+    "check_id": "CHK-06",
+    "severity": "MAJOR",
     "number": 6,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/6",
-    "title": "[BUG_ADMIN_04] [MAJOR] [Dashboard - IA-03] Keyboard accessibility and `Tab` key traversal on Sidebar navigation menu items (`<li>`)."
+    "title": "[BUG_ADMIN_04] [MAJOR] [Dashboard - IA-03] Menu Sidebar dùng thẻ `<li>` không có `tabIndex`, liệt hoàn toàn điều hướng bằng phím Tab"
   },
   {
     "bug_id": "BUG_ADMIN_05",
+    "check_id": "CHK-08",
+    "severity": "MINOR",
     "number": 7,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/7",
-    "title": "[BUG_ADMIN_05] [MAJOR] [Dashboard - IA-03] Quick shortcut navigation links or clickable drill-downs from KPI cards to detailed listing views."
+    "title": "[BUG_ADMIN_05] [MINOR] [Dashboard - IA-03] Thẻ KPI tổng số đơn hàng là div tĩnh, không thể nhấp để chuyển sang trang Quản lý đơn"
   },
   {
     "bug_id": "BUG_ADMIN_06",
+    "check_id": "CHK-09",
+    "severity": "CRITICAL",
     "number": 8,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/8",
-    "title": "[BUG_ADMIN_06] [MAJOR] [Dashboard - IA-04] Revenue calculation accuracy and synchronization with actual delivered orders in database."
+    "title": "[BUG_ADMIN_06] [CRITICAL] [Dashboard - IA-04] Phép tính doanh thu bị nhân đôi (`* 2`), đánh lừa số liệu tài chính quản trị viên"
   },
   {
     "bug_id": "BUG_ADMIN_07",
+    "check_id": "CHK-10",
+    "severity": "MINOR",
     "number": 9,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/9",
-    "title": "[BUG_ADMIN_07] [MAJOR] [Dashboard - IA-04] Cross-screen currency formatting consistency between Dashboard (`toLocaleString() ₫`), Products (raw unformatted), and Coupons (US comma)."
+    "title": "[BUG_ADMIN_07] [MINOR] [Dashboard - IA-04] Loạn định dạng tiền tệ giữa các tab (`0 ₫` vs `30000000 ₫` vs `300,000 ₫`)"
   },
   {
     "bug_id": "BUG_ADMIN_08",
+    "check_id": "CHK-11",
+    "severity": "MINOR",
     "number": 10,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/10",
-    "title": "[BUG_ADMIN_08] [MAJOR] [Dashboard - IA-04] Loading feedback and skeleton display during initial asynchronous API fetch of orders."
+    "title": "[BUG_ADMIN_08] [MINOR] [Dashboard - IA-04] Thiếu Skeleton loader hoặc loading spinner khi API đang nạp danh sách đơn hàng"
   },
   {
     "bug_id": "BUG_ADMIN_09",
+    "check_id": "CHK-15",
+    "severity": "MINOR",
     "number": 11,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/11",
-    "title": "[BUG_ADMIN_09] [MAJOR] [Sản phẩm & CSV - IA-01] Formatted price display in product catalog table with localized thousand separators."
+    "title": "[BUG_ADMIN_09] [MINOR] [Sản phẩm & CSV - IA-01] Giá sản phẩm trên bảng hiển thị chuỗi số nguyên dính chùm không có dấu phân cách ngàn"
   },
   {
     "bug_id": "BUG_ADMIN_10",
+    "check_id": "CHK-17",
+    "severity": "MAJOR",
     "number": 13,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/13",
-    "title": "[BUG_ADMIN_10] [MAJOR] [Sản phẩm & CSV - IA-02] Boundary constraint validation on product price field (`price >= 0`)."
+    "title": "[BUG_ADMIN_10] [MAJOR] [Sản phẩm & CSV - IA-02] Ô nhập giá tiền sản phẩm không có ràng buộc `min=\"0\"`, cho phép lưu giá bán âm"
   },
   {
     "bug_id": "BUG_ADMIN_11",
+    "check_id": "CHK-18",
+    "severity": "MINOR",
     "number": 14,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/14",
-    "title": "[BUG_ADMIN_11] [MAJOR] [Sản phẩm & CSV - IA-02] File upload MIME type and file extension restriction on CSV input control."
+    "title": "[BUG_ADMIN_11] [MINOR] [Sản phẩm & CSV - IA-02] Input upload CSV thiếu thuộc tính `accept=\".csv\"`, cho phép chọn mọi loại file không hợp lệ"
   },
   {
     "bug_id": "BUG_ADMIN_12",
+    "check_id": "CHK-19",
+    "severity": "CRITICAL",
     "number": 15,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/15",
-    "title": "[BUG_ADMIN_12] [MAJOR] [Sản phẩm & CSV - IA-02] CSV parser handling of embedded commas within quoted string fields (e.g., `\"Shirt, Cotton, Blue\"`)."
+    "title": "[BUG_ADMIN_12] [CRITICAL] [Sản phẩm & CSV - IA-02] Parser CSV dùng `split(',')` làm vỡ toàn bộ cấu trúc bảng khi mô tả chứa dấu phẩy"
   },
   {
     "bug_id": "BUG_ADMIN_13",
+    "check_id": "CHK-22",
+    "severity": "MAJOR",
     "number": 16,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/16",
-    "title": "[BUG_ADMIN_13] [MAJOR] [Sản phẩm & CSV - IA-03] Physical separation and safe spacing between \"Sửa\" (Edit) and \"Xóa\" (Delete) action buttons in table rows."
+    "title": "[BUG_ADMIN_13] [MAJOR] [Sản phẩm & CSV - IA-03] Nút Sửa và nút Xóa sản phẩm đặt sát nhau (`gap-2`), rất dễ gây click nhầm xóa sản phẩm"
   },
   {
     "bug_id": "BUG_ADMIN_14",
+    "check_id": "CHK-23",
+    "severity": "CRITICAL",
     "number": 17,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/17",
-    "title": "[BUG_ADMIN_14] [MAJOR] [Sản phẩm & CSV - IA-04] Destructive action confirmation modal dialog prior to product catalog deletion (`deleteProduct`)."
+    "title": "[BUG_ADMIN_14] [CRITICAL] [Sản phẩm & CSV - IA-04] Nút Xóa sản phẩm thực thi API xóa vĩnh viễn ngay lập tức mà không có hộp thoại Confirm"
   },
   {
     "bug_id": "BUG_ADMIN_15",
+    "check_id": "CHK-24",
+    "severity": "CRITICAL",
     "number": 18,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/18",
-    "title": "[BUG_ADMIN_15] [MAJOR] [Sản phẩm & CSV - IA-04] Single product update UI state integrity across catalog table records (`setProducts`)."
+    "title": "[BUG_ADMIN_15] [CRITICAL] [Sản phẩm & CSV - IA-04] Sửa một sản phẩm làm toàn bộ sản phẩm trên bảng UI bị đồng loạt đổi tên (`fakeMass`)"
   },
   {
     "bug_id": "BUG_ADMIN_16",
+    "check_id": "CHK-27",
+    "severity": "MAJOR",
     "number": 19,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/19",
-    "title": "[BUG_ADMIN_16] [MAJOR] [Mã Giảm Giá - IA-02] Persistent field labels visibility and differentiation when inputs have initial default numeric values."
+    "title": "[BUG_ADMIN_16] [MAJOR] [Mã Giảm Giá - IA-02] Giá trị khởi tạo `{min: 0, max: 1}` đè mất placeholder, form trơ trọi 2 ô số không có label"
   },
   {
     "bug_id": "BUG_ADMIN_18",
+    "check_id": "CHK-29",
+    "severity": "MAJOR",
     "number": 20,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/20",
-    "title": "[BUG_ADMIN_18] [MAJOR] [Mã Giảm Giá - IA-02] Temporal validity constraint on coupon expiration date picker (`min = today`)."
+    "title": "[BUG_ADMIN_18] [MAJOR] [Mã Giảm Giá - IA-02] Bộ chọn ngày hết hạn thiếu `min=\"today\"`, cho phép tạo mã có ngày hết hạn trong quá khứ"
   },
   {
     "bug_id": "BUG_ADMIN_19",
+    "check_id": "CHK-30",
+    "severity": "MAJOR",
     "number": 21,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/21",
-    "title": "[BUG_ADMIN_19] [MAJOR] [Mã Giảm Giá - IA-02] Upper boundary constraint enforcement for percentage discount value (`1 <= value <= 100`)."
+    "title": "[BUG_ADMIN_19] [MAJOR] [Mã Giảm Giá - IA-02] Không khống chế giá trị tối đa `max=\"100\"` khi chọn loại phần trăm, cho phép nhập 500%"
   },
   {
     "bug_id": "BUG_ADMIN_21",
+    "check_id": "CHK-35",
+    "severity": "CRITICAL",
     "number": 22,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/22",
-    "title": "[BUG_ADMIN_21] [MAJOR] [Mã Giảm Giá - IA-04] Destructive action confirmation modal dialog prior to coupon deletion."
+    "title": "[BUG_ADMIN_21] [CRITICAL] [Mã Giảm Giá - IA-04] Nút Xóa mã coupon xóa vĩnh viễn ngay lập tức mà không hiển thị hộp thoại xác nhận"
   },
   {
     "bug_id": "BUG_ADMIN_22",
+    "check_id": "CHK-40",
+    "severity": "MINOR",
     "number": 23,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/23",
-    "title": "[BUG_ADMIN_22] [MAJOR] [Đơn Hàng - IA-02] Search or filter input controls for locating specific orders by customer name or order ID."
+    "title": "[BUG_ADMIN_22] [MINOR] [Đơn Hàng - IA-02] Thiếu ô tìm kiếm và bộ lọc trạng thái đơn hàng, gây quá tải khi tìm kiếm đơn cụ thể"
   },
   {
     "bug_id": "BUG_ADMIN_23",
+    "check_id": "CHK-41",
+    "severity": "MINOR",
     "number": 24,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/24",
-    "title": "[BUG_ADMIN_23] [MAJOR] [Đơn Hàng - IA-02] Pagination or virtualized scrolling controls for handling large order volumes (>50 orders)."
+    "title": "[BUG_ADMIN_23] [MINOR] [Đơn Hàng - IA-02] Bảng đơn hàng hiển thị tất cả bản ghi trên một trang, thiếu phân trang (Pagination)"
   },
   {
     "bug_id": "BUG_ADMIN_24",
+    "check_id": "CHK-42",
+    "severity": "MAJOR",
     "number": 25,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/25",
-    "title": "[BUG_ADMIN_24] [MAJOR] [Đơn Hàng - IA-03] Action button sizing, touch target dimensions, and ergonomic spacing (Fitts's Law)."
+    "title": "[BUG_ADMIN_24] [MAJOR] [Đơn Hàng - IA-03] Kích thước nút chuyển trạng thái đơn quá bé (`text-xs px-2 py-1`), vi phạm định luật Fitts"
   },
   {
     "bug_id": "BUG_ADMIN_25",
+    "check_id": "CHK-43",
+    "severity": "MAJOR",
     "number": 26,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/26",
-    "title": "[BUG_ADMIN_25] [MAJOR] [Đơn Hàng - IA-03] Physical buffer separation between positive progression action (\"Xác nhận\") and destructive action (\"Hủy\")."
+    "title": "[BUG_ADMIN_25] [MAJOR] [Đơn Hàng - IA-03] Nút \"Xác nhận\" và nút \"Hủy\" đặt sát cạnh nhau, rất dễ gây tai nạn bấm hủy nhầm đơn"
   },
   {
     "bug_id": "BUG_ADMIN_26",
+    "check_id": "CHK-45",
+    "severity": "MAJOR",
     "number": 27,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/27",
-    "title": "[BUG_ADMIN_26] [MAJOR] [Đơn Hàng - IA-04] Empty state visual representation and explanatory messaging when no orders exist in the database (`orders = []`)."
+    "title": "[BUG_ADMIN_26] [MAJOR] [Đơn Hàng - IA-04] Bảng đơn hàng trắng toang không có dòng chữ Empty State nào khi chưa có đơn hàng"
   },
   {
     "bug_id": "BUG_ADMIN_27",
+    "check_id": "CHK-47",
+    "severity": "CRITICAL",
     "number": 28,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/28",
-    "title": "[BUG_ADMIN_27] [MAJOR] [Đơn Hàng - IA-04] State machine terminal state integrity enforcement for `canceled` orders (disallowing reactivation)."
+    "title": "[BUG_ADMIN_27] [CRITICAL] [Đơn Hàng - IA-04] Đơn hàng đã hủy (`canceled`) vẫn xuất hiện nút cho phép đánh dấu đã giao (`delivered`)"
   },
   {
     "bug_id": "BUG_ADMIN_28",
+    "check_id": "CHK-48",
+    "severity": "CRITICAL",
     "number": 30,
     "url": "https://github.com/Hidebray/Homework-week03-SoftwareTesting/issues/30",
-    "title": "[BUG_ADMIN_28] [MAJOR] [Đơn Hàng - IA-04] Security sanitization and XSS protection on rendered customer shipping address (`shipping_address`)."
+    "title": "[BUG_ADMIN_28] [CRITICAL] [Đơn Hàng - IA-04] Lỗ hổng XSS lưu trữ khi render địa chỉ giao hàng qua `dangerouslySetInnerHTML`"
   }
 ]
